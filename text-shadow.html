@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-shadow</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 80%;
+            height: 400px;
+        }
+        th{
+            border: 1px solid;
+            background-color: rgb(184, 160, 207);
+            line-height: 2;
+        }
+
+        .aa {
+            width: 80px;
+        }
+
+        td {
+            border: 1px solid;
+            line-height: 2;
+        }
+        .a {
+            text-align: center;
+        }
+
+
+        .shadow1 {
+            color: red;
+            text-shadow: 1px 1px black;
+        }
+
+        .shadow2 {
+            color: black;
+            text-shadow: 5px 5px 10px orange;
+        }
+
+        .shadow3 {
+            color: aliceblue;
+            text-shadow: -7px -7px 20px #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>text-shadow</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="aa">종류</th>
+                <th>설명</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="a">
+                    가로 거리
+                </td>
+                <td>
+                    텍스트부터 그림자까지의 가로 거리로 필수 속성. 양숫값은 글자의 오른쪽, 음숫값은 글자의 왼쪽에 그림자를 만듦.
+                </td>
+            </tr>
+            <tr>
+                <td class="a">세로 거리</td>
+                <td>텍스트부터 그림자까지의 세로 거리로 필수속성. 양숫값은 글자의 아래쪽, 음숫값은 글자의 위쪽에 그림자를 만듦.</td>
+            </tr>
+            <tr>
+                <td class="a">번짐 정도</td>
+                <td>그림자가 번지는 정도. 양숫값을 사용하면 그림자가 모든 방향으로 퍼져 나가므로 그림자가 크게 표시. 반대로 음숫값은 그림자가 모든 방향으로 축소. 기본값은 0</td>
+            </tr>
+            <tr>
+                <td class="a">색상</td>
+                <td>그림자 색상을 지정. 한 가지만 지정할 수도 있고 공백으로 구분해 여러 색상을 지정 가능. 기본값은 현재 글자색</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 class="shadow1" style="font-size: 5em;">HTML</h1>
+    <h1 class="shadow2" style="font-size: 5em;">CSS</h1>
+    <h1 class="shadow3" style="font-size: 5em;">자바스크립트</h1>
+</body>
+</html>
