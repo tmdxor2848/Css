@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-1</title>
+    <style>
+        p {
+            border: 1px solid gray;
+            width: 300px;
+            overflow-wrap: break-word; /* 글자 쪼개기  상자안에 맞추기*/
+            padding: 10px;
+        }
+
+        #static{
+            position: static;
+        }
+        #relative-1{
+            position: relative;
+            
+        }
+        #relative-2{
+            position: relative;
+            left: 100px;
+            top: -50px;
+        }
+        #fix {
+            width: 100px;
+            height: 100px;
+            background-color: #222;
+            position: fixed;
+            right: 30px;
+            top: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p id="static">asdasdaasdasdasdasd<br>asdasasdasdsadd<br>aasdasdasdasdasdasasdasdsaddasdasdasd</p>
+    <p id="relative-1">asdasdasdasdas<br>dasdasdasdasasdasdsadasdasdasdasdasda<br>sasdasdsaddaasdasdasdasdasdasasdasdsaddadaasdasdasdas<br>dasdasasdasdsaddaasdasd</p>
+    <p id="relative-2">asdasdasdasdasdasasdasdsaddaasdasdasdasdasdasas<br>dasdsaddaasdasdasda<br>sdasdasdasdasasdasdsaddaa<br>sdasdasdasdasdasasdasdsadda<br>asdasdasdasdasdasasdasdsaddaasdasdasdasasdasdsadda</p>
+    <p id="fix"></p>
+</body>
+</html>
