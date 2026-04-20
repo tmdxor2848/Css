@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-6</title>
+    <style>
+        div {
+            height: 300px;
+            width: 600px;
+            margin: 20px;
+        }
+        #round1 {
+            border: 2px solid blue;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+        #round2 {
+            border: 2px solid blue;
+            border-radius: 300px/150px;
+        }
+        #round3 {
+            border: 2px solid blue;
+            border-top-left-radius: 300px 150px;
+            border-top-right-radius: 300px 150px;
+            border-bottom-left-radius: 300px 150px;
+            border-bottom-right-radius: 300px 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="round1"></div>
+    <div id="round2"></div>
+    <div id="round3"></div>
+</body>
+</html>
