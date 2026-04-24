@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하위 선택자</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: rgb(224, 218, 218);
+        }
+        h1 {
+            margin: 20px;
+        }
+        p {
+            background-color: white;
+            border: 1px solid gray;
+            margin: 20px;
+            padding: 10px;
+        }
+        section p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>예약 방법 & 사용 요금</h1>
+        <p>아직 온라인 예약 신청이 준비되지 않았습니다. <br> 전화(XXX-XXXX-XXXX)로 문의하시기 바랍니다.</p>
+        <div>
+            <p>가족실(2~4인) : 60,000원/일</p>
+            <p>도미토리(4인 공용) : 25,000원/일</p>
+        </div>
+    </section>
+</body>
+</html>
