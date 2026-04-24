@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원형 그라데이션2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+        display: flex;
+        flex-wrap: wrap;
+        }
+        div {
+            height: 500px;
+            width: 50%;
+        }
+        .grad1 {
+          background: red;
+            background: radial-gradient(circle closest-side, white, yellow, red);
+        }
+        .grad2 {
+            background: red;
+            background: radial-gradient(circle closest-corner, white, yellow, red);
+            /* 원형 */
+        }
+        .grad3 {
+            background: red;
+            background: radial-gradient(circle farthest-side, white, yellow, red);
+            /* 원형 */
+        }
+        .grad4 {
+            background: red;
+            background: radial-gradient(circle farthest-corner, white, yellow, red);
+            /* 원형 */
+        }
+    </style>
+</head>
+<body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+    <div class="grad4"></div>
+</body>
+</html>
