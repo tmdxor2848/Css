@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps-1</title>
+    <style>
+        body {
+            margin: 0;
+            align-items: center;
+        }
+
+        nav {
+            width: 100%;
+            border-bottom: 2px solid gray;
+        }
+
+        .navi ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navi ul li {
+            list-style: none;
+            width: 150px;
+            padding: 10px;
+        }
+
+        .navi a:link,
+        .navi a:visited {
+            /* 방문한 링크와 방문하지 않은 링크 설정 */
+            display: block;
+            font-size: 14px;
+            color: #000;
+            padding: 10px;
+            text-decoration: none;
+            /* 밑줄을 없앰 */
+            text-align: center;
+        }
+
+        .navi a:hover,
+        .navi a:focus {
+            /* 마우스 포인터를 올렸을 때와 초점을 맞췄을 때 설정*/
+            background-color: #222;
+            color: #fff;
+        }
+
+        .navi a:active {
+            background-color: #f00;
+        }
+
+        .content {
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 50%;
+            height: 200px;
+            margin-top: 30px;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            word-wrap: break-word;
+        }
+
+        #intro:target {
+            background-color: #0069c0;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navi">
+            <ul>
+                <li><a href="#intro">이용 안내</a></li>
+                <li><a href="#room">객실 소개</a></li>
+                <li><a href="#reservation">예약 방법 및 요금</a></li>
+                <li><a href="#reserve">예약하기</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="intro" class="content">
+        <h2>이용안내</h2>
+        <p>asdasdasdasdasdasdasdasdasdasdasdasd asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+            asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd</p>
+    </div>
+    <div id="room" class="content">
+        <h2>객실소개</h2>
+        <p>asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+        </p>
+    </div>
+    <div id="reservation" class="content">
+        <h2>예약 방법 및 요금</h2>
+        <p>asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+        </p>
+    </div>
+    <div id="reserve" class="content">
+        <h2>예약하기</h2>
+        <p>asdasdasdasdasdasdaasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdsdasdasdasdasdasd
+        </p>
+    </div>
+</body>
+
+</html>
