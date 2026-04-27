@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register3</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+
+        fieldset {
+            margin: 20px;
+            height: auto;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        button {
+            height: 50px;
+            width: 130px;
+            border-radius: 30px;
+        }
+
+        #signup label {
+            display: flex;
+            margin: 10px 0;
+            align-items: center;
+        }
+
+        #signup label span {
+            width: 120px;
+        }
+
+        /* #signup input[type=text],
+        #signup input[type=password],
+        #signup input[type=tel],
+        #signup input[type=email] {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 13px;
+            padding: 5px;
+            width: 200px;
+        } */
+
+        #signup input:not([type=radio]) {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 13px;
+            padding: 5px;
+            width: 200px;
+        }
+
+        #signup input[required] {
+            border: 1px red solid;
+        }
+
+        #signup input[readonly] {
+            border: none;
+        }
+
+        #signup button:hover {
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="signup">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <label>
+                <span>아이디</span>
+                <input type="text" required>
+            </label>
+
+            <label>
+                <span>비밀번호</span>
+                <input type="password" required>
+            </label>
+
+            <label>
+                <span>비밀번호 확인</span>
+                <input type="password" required>
+            </label>
+
+            <label>
+                <span>회원 등급</span>
+                <input type="text" value="준회원" readonly>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <label for="">
+                <span>이름 </span>
+                <input type="text" placeholder="5자미만 공백없이" required>
+            </label>
+            <label for="">
+                <span>메일 주소</span><input type="email" required placeholder="abcd@domain.com">
+            </label>
+            <label for="">
+                <span>연락처</span>
+                <input type="tel">
+            </label>
+        </fieldset>
+
+        <div>
+            <button type="submit">제출</button>
+        </div>
+    </form>
+</body>
+
+</html>
