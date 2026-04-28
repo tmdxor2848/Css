@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate3D</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            margin: 50px;
+            perspective: 200px;
+        }
+
+        [class*=rotate] {
+
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+            transition: 0.3s;
+            /* 변하는데 걸리는 시간 */
+
+        }
+
+        .rotate1:hover {
+            transform: rotatex(55deg);
+        }
+
+        .rotate2:hover {
+            transform: rotatey(55deg);
+        }
+
+        .rotate3:hover {
+            transform: rotatez(55deg);
+        }
+
+        .rotate4:hover {
+            transform: rotate3d(2.5, 1.2, -1.5, 55deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="rotate1"></div>
+    </div>
+
+    <div class="box">
+        <div class="rotate2"></div>
+    </div>
+    <div class="box">
+        <div class="rotate3"></div>
+    </div>
+    <div class="box">
+        <div class="rotate4"></div>
+    </div>
+
+</body>
+
+</html>
