@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scale</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            margin: 50px;
+        }
+
+        [class*=scale] {
+
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+
+        }
+
+        .scalex:hover {
+            transform: scalex(2);
+        }
+
+        .scaley:hover {
+            transform: scaley(2);
+        }
+
+        .scalexy:hover {
+            transform: scale(0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="scalex"></div>
+    </div>
+
+    <div class="box">
+        <div class="scaley"></div>
+    </div>
+
+    <div class="box">
+        <div class="scalexy"></div>
+    </div>
+</body>
+
+</html>

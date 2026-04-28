@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perspective</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            margin: 50px;
+        }
+
+        .box1 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            margin: 50px;
+            perspective: 500px;
+            /* 원근감을 주는 속성 반드시 부모에게 부여해야함 */
+        }
+
+        [class*=rotate] {
+
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(yellow, red 20px);
+            transition: 0.3s;
+            /* 변하는데 걸리는 시간 */
+
+        }
+
+        .rotate1:hover {
+            transform: rotatex(50deg);
+        }
+
+        .rotate2:hover {
+            transform: rotatex(50deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="rotate1"></div>
+    </div>
+    <div class="box1">
+        <div class="rotate2"></div>
+    </div>
+
+
+</body>
+
+</html>
