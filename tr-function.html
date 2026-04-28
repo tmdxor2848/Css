@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-function</title>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        [class*=box] {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            transition-property: height;
+            transition-duration: 3s;
+        }
+
+        .box1 {
+            transition-timing-function: ease;
+        }
+
+        .box2 {
+            transition-timing-function: linear;
+        }
+
+        .box3 {
+            transition-timing-function: ease-in;
+        }
+
+        .box4 {
+            transition-timing-function: ease-out;
+        }
+
+        .box5 {
+            transition-timing-function: ease-in-out;
+        }
+
+        .container:hover [class*=box] {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <p>ease</p>
+            <p>처음에는 천천히 점점 빨리 마지막에 천천히 (기본값)</p>
+        </div>
+        <div class="box2">
+            <p>linear</p>
+            <p>시작부터 끝까지 같은 속도</p>
+        </div>
+        <div class="box3">
+            <p>ease-in</p>
+            <p>느리게 시작</p>
+        </div>
+        <div class="box4">
+            <p>ease-out</p>
+            <p>느리게 끝남</p>
+        </div>
+        <div class="box5">
+            <p>ease-in-out</p>
+            <p>느리게 시작 느리게 끝남</p>
+        </div>
+    </div>
+</body>
+
+</html>
