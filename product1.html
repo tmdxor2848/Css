@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform,transition</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        margin: 30px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* 핵심 */
+        align-items: center;
+        /* 가운데 정렬 */
+    }
+
+    .prod-list {
+        display: flex;
+        margin: auto;
+        gap: 30px;
+    }
+
+    .prod-list li {
+        float: left;
+        margin: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .prod-list .caption {
+        position: absolute;
+        top: 200px;
+        height: 205px;
+        width: 200px;
+        padding-top: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: all 0.6s ease-in-out;
+        z-index: 10;
+
+        display: flex;
+        /* 추가 */
+        flex-direction: column;
+        /* 세로 정렬 */
+        justify-content: center;
+        /* 세로 가운데 */
+        align-items: center;
+        /* 가로 가운데 */
+    }
+
+    .prod-list li:hover .caption {
+        opacity: 1;
+        transform: translateY(-200px);
+    }
+
+    .prod-list .caption h2,
+    .prod-list .caption p {
+        color: #fff;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>신상품 목록</h1>
+        <ul class="prod-list">
+            <li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ5Rw4efUxHRJfwNoW9igzrxGQSZF6CUryeg&s"
+                    alt="상품1">
+                <div class="caption">
+                    <h2>상품 1</h2>
+                    <p>상품 1 설명 텍스트</p>
+                    <p>가격 : 12,345원</p>
+                </div>
+            </li>
+            <li>
+                <img src="https://image.yes24.com/goods/18859559/XL" alt="상품2">
+                <div class="caption">
+                    <h2>상품 2</h2>
+                    <p>상품 2 설명 텍스트</p>
+                    <p>가격 : 67,890원</p>
+                </div>
+            </li>
+            <li>
+                <img src="https://cdn.imweb.me/thumbnail/20200710/47bf334b71bbd.jpg" alt="상품3">
+                <div class="caption">
+                    <h2>상품 3</h2>
+                    <p>상품 3 설명 텍스트</p>
+                    <p>가격 : 54,321원</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
