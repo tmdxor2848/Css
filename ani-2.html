@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ani-2</title>
+    <style>
+        [class*=box] {
+            border: 1px solid transparent;
+            /* 투명색 테두리 */
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+        }
+
+        .box1 {
+            background-color: greenyellow;
+            /* animation-name: shape;
+            사용 할 애니메이션 이름
+            animation-duration: 3s;
+            애니메이션 실행 시간
+            animation-duration: alternate;
+            애니메이션 방향 (nomar: form-to, reverse: to-from, alternate: 홀수번째는 nomar 짝수번째는 reverse, alternate-revers: 홀수번째는 reverse 짝수번째 normal)
+            animation-iteration-count: infinite;
+            애니메이션 실행 횟수 숫자 넣으면 숫자만큼
+            animation-timing-function: ease-in;
+            애니메이션 진행 속도
+            애니메이션 무한반복, 숫자를 넣으면 반복 횟수를 정함 */
+
+            animation: shape 3s alternate infinite ease-in;
+        }
+
+        .box2 {
+            background-color: plum;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* 애니메이션 무한반복, 숫자를 넣으면 반복 횟수를 정함 */
+        }
+
+        @keyframes shape {
+            from {
+                border: 1px solid transparent;
+                /* 1px 짜리 투명 테두리에서*/
+            }
+
+            to {
+                border: 1px solid black;
+                /* 검은 테두리로 변경 */
+                border-radius: 50%;
+                /* 테두리를 둥글게 변경 */
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ani-3</title>
+    <style>
+        [class*=box] {
+            border: 1px solid transparent;
+            /* 투명색 테두리 */
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+        }
+
+        .box1 {
+            background-color: greenyellow;
+            animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+        }
+
+
+        @keyframes rotate {
+            from {
+                transform: perspective(120px) rotatex(0deg) rotateY(0deg);
+            }
+
+            50% {
+                transform: perspective(120px) rotateX(-180px) rotatey(0deg);
+            }
+
+            to {
+                transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+            }
+        }
+
+        @keyframes background {
+            from {
+                background-color: greenyellow;
+            }
+
+            50% {
+                background-color: mediumaquamarine;
+            }
+
+            to {
+                background-color: papayawhip;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+    </div>
+
+</body>
+
+</html>
