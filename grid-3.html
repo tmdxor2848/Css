@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-3</title>
+</head>
+<style>
+    .wrapper1 {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin-bottom: 10px;
+    }
+
+    .wrapper2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .items {
+        word-break: break-all;
+        padding: 10px;
+    }
+
+    /* 홀수 */
+    .items:nth-child(odd) {
+        background-color: lightgray;
+    }
+
+    /* 짝수 */
+    .items:nth-child(even) {
+        background-color: gray;
+    }
+</style>
+
+<body>
+    <div class="wrapper1">
+        <div class="items">asdsasdasdsadasdsadasdsadasdsadasdsadasdsadsadasdsadasdsadasdsadasdsadasdsadad</div>
+        <div class="items">asdaasdsadasdsadasdsadaasdsadasdsadasdsadsdsadasdsadsd</div>
+        <div class="items">asdsaasdsadasdsadasdsadasdsadasdsadasdsadd</div>
+        <div class="items">asdaasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadsd</div>
+        <div class="items">asdasd</div>
+    </div>
+    <div class="wrapper2">
+        <div class="items">asdsasdasdsadasdsadasdsadasdsadasdsadasdsadsadasdsadasdsadasdsadasdsadasdsadad</div>
+        <div class="items">asdaasdsadasdsadasdsadaasdsadasdsadasdsadsdsadasdsadsd</div>
+        <div class="items">asdsaasdsadasdsadasdsadasdsadasdsadasdsadd</div>
+        <div class="items">asdaasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadsd</div>
+        <div class="items">asdasd</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-1</title>
+</head>
+<style>
+    .wrapper {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 100px;
+    }
+
+    /* 홀수 */
+    .items:nth-child(odd) {
+        background-color: lightgray;
+    }
+
+    /* 짝수 */
+    .items:nth-child(even) {
+        background-color: gray;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="items">asdsad</div>
+        <div class="items">asdasd</div>
+        <div class="items">asdsad</div>
+        <div class="items">asdasd</div>
+        <div class="items">asdasd</div>
+    </div>
+</body>
+
+</html>

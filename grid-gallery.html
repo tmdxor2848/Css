@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-gallery</title>
+    <style>
+        body {
+            background-color: #eee;
+            font-size: 16px;
+        }
+
+        .card {
+            border: 1px solid gray;
+            background-color: white;
+            box-shadow: 1px 1px 3px 1px gray;
+            /* 수평거리 수직거리 흐림정도 번짐정도 색상 inset */
+            padding: 10px;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <header>
+                <h3>사진 제목</h3>
+            </header>
+            <figure><img
+                    src="https://images.unsplash.com/photo-1570784332176-fdd73da66f03?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JUVDJUJCJUI1fGVufDB8fDB8fHww"
+                    alt=""></figure>
+            <p>사진 설명 : asldasldlasdlsadllasalsdlsa</p>
+        </div>
+        <div class="card">
+            <header>
+                <h3>사진 제목</h3>
+            </header>
+            <figure><img src="https://m.ideascience.co.kr/web/product/big/201906/ead42eb56336a6f6930abc7258bd3e30.jpg"
+                    alt=""></figure>
+            <p>사진 설명 : asldasldlasdlsadllasalsdlsa</p>
+        </div>
+        <div class="card">
+            <header>
+                <h3>사진 제목</h3>
+            </header>
+            <figure><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5SgOMK7yAUAA1zFJGKM9i1M75ELQnWduxqQBNx5pydA&s&ec=121657058"
+                    alt=""></figure>
+            <p>사진 설명 : asldasldlasdlsadllasalsdlsa</p>
+        </div>
+        <div class="card">
+            <header>
+                <h3>사진 제목</h3>
+            </header>
+            <figure><img src="https://cdn.imweb.me/thumbnail/20240702/298e7079410e9.jpg" alt=""></figure>
+            <p>사진 설명 : asldasldlasdlsadllasalsdlsa</p>
+        </div>
+        <div class="card">
+            <header>
+                <h3>사진 제목</h3>
+            </header>
+            <figure><img
+                    src="https://reallywellmade.kr/cdn/shop/files/Barro_Cup_Set_of_2_light_blue.jpg?v=1708484672&width=1946"
+                    alt=""></figure>
+            <p>사진 설명 : asldasldlasdlsadllasalsdlsa</p>
+        </div>
+        <div class="card">
+            <header>
+                <h3>사진 제목</h3>
+            </header>
+            <figure><img src="https://cdn.imweb.me/thumbnail/20240228/528da76136bca.jpg" alt=""></figure>
+            <p>사진 설명 : asldasldlasdlsadllasalsdlsa</p>
+        </div>
+        <div class="card">
+            <header>
+                <h3>사진 제목</h3>
+            </header>
+            <figure><img
+                    src="https://godomall.speedycdn.net/27edac5c4ebfb1d190651f9bdcd4390d/goods/483733/image/main/483733_main_034.jpg"
+                    alt=""></figure>
+            <p>사진 설명 : asldasldlasdlsadllasalsdlsa</p>
+        </div>
+        <div class="card">
+            <header>
+                <h3>사진 제목</h3>
+            </header>
+            <figure><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIsXnmn-nm2IuiGTu_F5aG75dtXbYfOFk53Q&s"
+                    alt=""></figure>
+            <p>사진 설명 : asldasldlasdlsadllasalsdlsa</p>
+        </div>
+    </div>
+</body>
+
+</html>
